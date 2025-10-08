@@ -31,7 +31,7 @@ DOE will provide public access to these results of federally sponsored research 
 
 **Key components of the AD5941 chip :**
 
-![Figure 1](image_1.png)
+![Figure 1](figure-s1.png)
 Figure S1
 
 - **LPTIA (Low Power Transimpedance Amplifier):** Converts current to voltage.  
@@ -64,6 +64,7 @@ The AD5941 supports amperometry, chronoamperometry, cyclic voltammetry, square w
 The key circuit of the EIS potentiostat is the AD5941 chip.[1]  
 The chip is a very small 7×7 mm, 48-pin lead frame chip scale package (LFCSP) integrated circuit.  
 Soldering is possible with the help of a stencil ordered together with the printed circuit board (PCB), see Figures **S2a/S2b**.
+
 ![Figure 2](figure-s2a.png)
 Figure S2a - PCB layout and stencil of the HunStat2 circuit
 
