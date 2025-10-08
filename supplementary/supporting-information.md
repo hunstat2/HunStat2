@@ -112,13 +112,14 @@ The sketch program for the RP2040 can be downloaded from the GitHub [AD5941_25.z
 ## S-6 The HunStat2 Graphical User Interface Software. 
 The HunStat2 GUI software can be downloaded from the GitHub (HunStat2-v700 (1).exe) of [3] place the files into an empty folder on your computer. After connecting the potentiostat, and launching the GUI, the initial screen will appear ![Figure S7](figure-s7.png).
 
-[Figure S8a](Figure S8a), [Figure S8b](Figure S8b) shows an example screenshot after an EIS measurement. The icons shown in the top row, from left to right: Open file, Save file, Start measurement, Clear zoom, Save plot (into a PNG file), Redraw current measurement, Settings, Information. The software can handle three electroanalytical techniques: cyclic voltammetry (CV), open circuit potential (OCP), and electrochemical impedance spectroscopy (EIS). Parameters for these techniques can be adjusted in the CV, Open Circuit Potential and EIS tabs. Additionally, the Signal processing tab allows smoothing of the resulting voltammogram in two different ways (Savitzky-Golay or moving average smoothing). Communication between the GUI and the potentiostat can be monitored in the Log tab.
+[Figure S8a](figure-s8a.png), [Figure S8b](figure-s8b.png) shows an example screenshot after an EIS measurement. The icons shown in the top row, from left to right: Open file, Save file, Start measurement, Clear zoom, Save plot (into a PNG file), Redraw current measurement, Settings, Information. The software can handle three electroanalytical techniques: cyclic voltammetry (CV), open circuit potential (OCP), and electrochemical impedance spectroscopy (EIS). Parameters for these techniques can be adjusted in the CV, Open Circuit Potential and EIS tabs. Additionally, the Signal processing tab allows smoothing of the resulting voltammogram in two different ways (Savitzky-Golay or moving average smoothing). Communication between the GUI and the potentiostat can be monitored in the Log tab.
 
 Critical quantitative information can be obtained from the peak heights of recorded CV curves. To do this, you need to draw a baseline. This can be done by holding down the Shift button and clicking the left mouse button. When placing the cursor over the desired peak, the peak height relative to the baseline (Ipeak) can be read in the upper right corner. A more detailed manual can be downloaded from [3] or directly asked from the authors.
 
 Before making a real analytical measurement, it is advisable to perform the a simple checks. 
 
 Connect a given resistor between the shorted CE-RE point and the WE, and run the potential between 0 and 1 V. If the circuit is functioning properly, an increasing current with increasing voltage is observed. Current at 1 V should be equal to 1 V divided by the resistor’s value.
+
 For further questions or development suggestions, the authors can be contacted directly. 
  
 
