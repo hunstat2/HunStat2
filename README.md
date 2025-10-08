@@ -23,5 +23,5 @@ HunStat2 is designed for **analytical chemistry, electrochemical research, and e
 
 - **Hardware**: This folder contains the files required for ordering the printed circuit board.
 - **Samples**: CV and EIS measurement diagrams of different samples measured with HunStat2.
-- **Software**: Arduino and GUI software components of the system.
+- **Software**: Arduino and GUI software components of HunStat2.
 - **supplementary**: Supporting document of the project.
