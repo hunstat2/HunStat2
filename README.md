@@ -7,7 +7,7 @@ This repository contains the open-source hardware and software of the **HunStat2
 ---
 
 ## About HunStat2
-**HunStat2** is a low-cost (~30 USD), open-source potentiostat capable of performing  
+**HunStat2** is a low-cost (30 USD), open-source potentiostat capable of performing  
 - **cyclic voltammetry (CV)**,
 - **open-circuit potential (OCP)** measurements,
 - **electrochemical impedance spectroscopy (EIS)**.  
