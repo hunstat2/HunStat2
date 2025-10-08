@@ -66,9 +66,11 @@ The chip is a very small 7×7 mm, 48-pin lead frame chip scale package (LFCSP) i
 Soldering is possible with the help of a stencil ordered together with the printed circuit board (PCB), see Figures **S2a/S2b**.
 
 ![Figure 2](figure-s2a.png)
+
 Figure S2a - PCB layout and stencil of the HunStat2 circuit
 
 ![Figure 3](figure-s2b.png)
+
 Figure S2b - The PCB board with SMD components embedded 
 
 The stencil is a very thin metal plate, on which cutouts are made at the surface-mount device (SMD) pad locations using a laser beam.  
@@ -81,6 +83,7 @@ A ready-made mounted circuit board can also be ordered, for which the authors pr
 > **Important:** To measure OCP, the reference electrode must be connected to the AIN3 pin on the board as shown in Figure S3.
 
 ![Figure S3](figure-s3.png)
+
 Figure S3 - Reference electrode (bottom leftmost connector) must be connected to AIN3 pin (right side) on the board to be able to measure OCP.
 
 To ensure reproducibility and broaden accessibility, the complete device can also be obtained in an assembled form.  
@@ -96,6 +99,7 @@ The first step is to add Seeed Studio XIAO RP2040 board package to your Arduino 
 [https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json](https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json) in the Additional Boards Manager URLs field (Figure S4) and click OK.
 
 ![Figure 4](figure-s4.png)
+
 Figure S4 - Setting up additional boards in the Arduino IDE
 
 In order for the Arduino IDE to handle the Seeeduino XIAO RP2040, navigate to Tools/Board/Boards Manager... menu, type the keyword "RP2040" in the search bar.
@@ -144,5 +148,3 @@ Figure 8a - Main screen of the HunStat2.exe software after an EIS measurement. (
 ![Figure 8b](figure-s8b.png)
 Figure 8b - Main screen of the HunStat2.exe software after an EIS measurement. 
 
-![Figure 10](image_10.png)
-Figure 8b - 
