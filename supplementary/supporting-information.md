@@ -134,15 +134,6 @@ Last accessed Oct. 5, 2025.
 
 ## SUPPORTING IMAGES
 
-![Figure 5](figure-s5.png)
-Figure 5 - Installing the Raspberry Pi Pico/RP2040 board driver
-
-![Figure 6](figure-s6.png)
-Figure 6 - Selecting the XIAO RP2040 board
-
-![Figure 7](figure-s7.png)
-Figure 7 - Main screen of the HunStat2.exe software after start
-
 ![Figure 8a](figure-s8a.png)
 Figure 8a - Main screen of the HunStat2.exe software after an EIS measurement. (Figure S8a. shows the Bode plot of the same Randles dummy cell as the Nyquist plot shown in Figure S8b.)
 
