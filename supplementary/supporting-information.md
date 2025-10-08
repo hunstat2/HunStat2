@@ -29,7 +29,10 @@ DOE will provide public access to these results of federally sponsored research 
 
 ## S-3 Details on the AD5941 Chip
 
-**Key components of the AD5941 chip (Figure S1):**
+**Key components of the AD5941 chip :**
+
+![Figure 1](image_1.png)
+Figure S1
 
 - **LPTIA (Low Power Transimpedance Amplifier):** Converts current to voltage.  
 - **LPDAC (Low Power Digital-to-Analog Converter):** Generates VZERO and VBIAS.  
@@ -88,8 +91,6 @@ Gerber, Pick-and-Place, and BOM files are available in the accompanying GitHub r
 1. Open the Arduino IDE and go to **File → Preferences**.  
    Add the following URL to *Additional Boards Manager URLs*:  
 
-
-![Figure 1](image_1.png)
 
 ![Figure 2](image_2.png)
 
