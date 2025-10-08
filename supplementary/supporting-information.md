@@ -64,10 +64,10 @@ The AD5941 supports amperometry, chronoamperometry, cyclic voltammetry, square w
 The key circuit of the EIS potentiostat is the AD5941 chip.[1]  
 The chip is a very small 7×7 mm, 48-pin lead frame chip scale package (LFCSP) integrated circuit.  
 Soldering is possible with the help of a stencil ordered together with the printed circuit board (PCB), see Figures **S2a/S2b**.
-![Figure 2](image_2.png)
+![Figure 2](figure-s2a.png)
 Figure S2a - PCB layout and stencil of the HunStat2 circuit
 
-![Figure 3](image_3.png)
+![Figure 3](figure-s2b.png)
 Figure S2b - The PCB board with SMD components embedded 
 
 The stencil is a very thin metal plate, on which cutouts are made at the surface-mount device (SMD) pad locations using a laser beam.  
@@ -79,7 +79,7 @@ A ready-made mounted circuit board can also be ordered, for which the authors pr
 
 > **Important:** To measure OCP, the reference electrode must be connected to the AIN3 pin on the board as shown in Figure S3.
 
-![Figure S3](image_4.png)
+![Figure S3](figure-s3.png)
 Figure S3 - Reference electrode (bottom leftmost connector) must be connected to AIN3 pin (right side) on the board to be able to measure OCP.
 
 To ensure reproducibility and broaden accessibility, the complete device can also be obtained in an assembled form.  
@@ -94,19 +94,20 @@ In the schematic (Hardvare/HunStat2 circuit.jpg in this repository), the RCAL va
 The first step is to add Seeed Studio XIAO RP2040 board package to your Arduino IDE.[2] For this, select the File/Preferences menu in the Arduino IDE, and put 
 [https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json](https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json) in the Additional Boards Manager URLs field (Figure S4) and click OK.
 
-![Figure 4](image_4.png)
+![Figure 4](figure-s4.png)
 Figure S4 - Setting up additional boards in the Arduino IDE
 
 In order for the Arduino IDE to handle the Seeeduino XIAO RP2040, navigate to Tools/Board/Boards Manager... menu, type the keyword "RP2040" in the search bar.
 
-> **Important:** Select version 2.7.1. of "Raspberry Pi Pico/RP2040" board and install it (Figure S5). (In our experience, later versions (as of July 1, 2025) don’t work with the board.) After that, select the XIAO RP2040 board from the Tools/Board menu (Figure S6) and the appropriate port. NOTE: Another option is opening https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/ and following the instructions. 
+> **Important:** Select version 2.7.1. of "Raspberry Pi Pico/RP2040" board and install it (Figure S5). (In our experience, later versions (as of July 1, 2025) don’t work with the board.) After that, select the XIAO RP2040 board from the Tools/Board menu (Figure S6) and the appropriate port. NOTE: Another option is opening 
+[https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/) and following the instructions. 
 
-The sketch program for the RP2040 can be downloaded from the GitHub (AD5941_25.zip)[../Software/AD5941_25.zip] of [3] and upload them to the RP2040. Additional instructions  can be acquired from the authors directly, free of charge.
+The sketch program for the RP2040 can be downloaded from the GitHub [AD5941_25.zip](../Software/AD5941_25.zip) of [3] and upload them to the RP2040. Additional instructions  can be acquired from the authors directly, free of charge.
 
 ## S-6 The HunStat2 Graphical User Interface Software. 
-The HunStat2 GUI software can be downloaded from the GitHub (HunStat2-v700 (1).exe) of [3] place the files into an empty folder on your computer. After connecting the potentiostat, and launching the GUI, the initial screen will appear (Figure S7).
+The HunStat2 GUI software can be downloaded from the GitHub (HunStat2-v700 (1).exe) of [3] place the files into an empty folder on your computer. After connecting the potentiostat, and launching the GUI, the initial screen will appear ![Figure S7](figure-s7.png).
 
-Figure S8 shows an example screenshot after an EIS measurement. The icons shown in the top row, from left to right: Open file, Save file, Start measurement, Clear zoom, Save plot (into a PNG file), Redraw current measurement, Settings, Information. The software can handle three electroanalytical techniques: cyclic voltammetry (CV), open circuit potential (OCP), and electrochemical impedance spectroscopy (EIS). Parameters for these techniques can be adjusted in the CV, Open Circuit Potential and EIS tabs. Additionally, the Signal processing tab allows smoothing of the resulting voltammogram in two different ways (Savitzky-Golay or moving average smoothing). Communication between the GUI and the potentiostat can be monitored in the Log tab.
+[Figure S8a](Figure S8a), [Figure S8b](Figure S8b) shows an example screenshot after an EIS measurement. The icons shown in the top row, from left to right: Open file, Save file, Start measurement, Clear zoom, Save plot (into a PNG file), Redraw current measurement, Settings, Information. The software can handle three electroanalytical techniques: cyclic voltammetry (CV), open circuit potential (OCP), and electrochemical impedance spectroscopy (EIS). Parameters for these techniques can be adjusted in the CV, Open Circuit Potential and EIS tabs. Additionally, the Signal processing tab allows smoothing of the resulting voltammogram in two different ways (Savitzky-Golay or moving average smoothing). Communication between the GUI and the potentiostat can be monitored in the Log tab.
 
 Critical quantitative information can be obtained from the peak heights of recorded CV curves. To do this, you need to draw a baseline. This can be done by holding down the Shift button and clicking the left mouse button. When placing the cursor over the desired peak, the peak height relative to the baseline (Ipeak) can be read in the upper right corner. A more detailed manual can be downloaded from [3] or directly asked from the authors.
 
@@ -117,28 +118,30 @@ For further questions or development suggestions, the authors can be contacted d
  
 
 ## REFERENCES  
-[1] https://www.analog.com/en/products/ad5941.html. Last accessed June 5, 2025.
-[2] https://www.arduino.cc . Last accessed June 5, 2025.
-[3] https://github.com/hunstat2/HunStat2
+- [1] https://www.analog.com/en/products/ad5941.html. Last accessed June 5, 2025.
+- [2] https://www.arduino.cc . Last accessed June 5, 2025.
+- [3] https://github.com/hunstat2/HunStat2
+
 Last accessed Oct. 5, 2025.
 
 
 
 ## SUPPORTING IMAGES
 
-![Figure 5](image_5.png)
+![Figure 5](figure-s5.png)
 Figure 5 - Installing the Raspberry Pi Pico/RP2040 board driver
 
-![Figure 6](image_6.png)
+![Figure 6](figure-s6.png)
 Figure 6 - Selecting the XIAO RP2040 board
 
-![Figure 7](image_7.png)
+![Figure 7](figure-s7.png)
 Figure 7 - Main screen of the HunStat2.exe software after start
 
-![Figure 8](image_8.png)
-Figure 8a - 
-![Figure 9](image_9.png)
+![Figure 8a](figure-s8a.png)
+Figure 8a - Main screen of the HunStat2.exe software after an EIS measurement. (Figure S8a. shows the Bode plot of the same Randles dummy cell as the Nyquist plot shown in Figure S8b.)
 
+![Figure 8b](figure-s8b.png)
+Figure 8b - Main screen of the HunStat2.exe software after an EIS measurement. 
 
 ![Figure 10](image_10.png)
 Figure 8b - 
