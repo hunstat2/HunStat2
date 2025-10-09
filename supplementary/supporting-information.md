@@ -110,7 +110,7 @@ In order for the Arduino IDE to handle the Seeeduino XIAO RP2040, navigate to To
 The sketch program for the RP2040 can be downloaded from the GitHub [AD5941_25.zip](../Software/AD5941_25.zip) of [3] and upload them to the RP2040. Additional instructions  can be acquired from the authors directly, free of charge.
 
 ## S-6 The HunStat2 Graphical User Interface Software. 
-The HunStat2 GUI software can be downloaded from the GitHub (HunStat2-v700 (1).exe) of [3] place the files into an empty folder on your computer. After connecting the potentiostat, and launching the GUI, the initial screen will appear ![Figure S7](figure-s7.png).
+The HunStat2 GUI software can be downloaded from the GitHub (HunStat2-v700.exe) of [3] place the files into an empty folder on your computer. After connecting the potentiostat, and launching the GUI, the initial screen will appear ![Figure S7](figure-s7.png).
 
 [Figure S8a](figure-s8a.png), [Figure S8b](figure-s8b.png) shows an example screenshot after an EIS measurement. The icons shown in the top row, from left to right: Open file, Save file, Start measurement, Clear zoom, Save plot (into a PNG file), Redraw current measurement, Settings, Information. The software can handle three electroanalytical techniques: cyclic voltammetry (CV), open circuit potential (OCP), and electrochemical impedance spectroscopy (EIS). Parameters for these techniques can be adjusted in the CV, Open Circuit Potential and EIS tabs. Additionally, the Signal processing tab allows smoothing of the resulting voltammogram in two different ways (Savitzky-Golay or moving average smoothing). Communication between the GUI and the potentiostat can be monitored in the Log tab.
 
